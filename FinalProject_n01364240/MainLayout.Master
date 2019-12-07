@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainLayout.master.cs" Inherits="FinalProject_n01364240.MainLayout" %>
+<%@ Register Src="~/WebsitePages.ascx" TagName="WebsitePages" TagPrefix="asp"%>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>My CMS</title>
+    <link rel="stylesheet" type="text/css" href="/Content/MyStyle.css" />
+</head>
+<body>
+    <header>
+        <h2 id="website-name"><a href="/ListPages.aspx">MY WEBSITE</a></h2>
+        <nav id="header-naviagtion">
+            <asp:WebsitePages runat="server"></asp:WebsitePages>
+        </nav>
+    </header>
+    <div class="cwidth">
+        <form id="form1" runat="server">
+            <asp:ContentPlaceHolder ID="body" runat="server">
+            </asp:ContentPlaceHolder>
+        </form>
+    </div>
+    <footer>
+         <div id="copyright">&copy; Design by Yash Pathak.</div>
+    </footer>
+</body>
+</html>
