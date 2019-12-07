@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Pages" Language="C#" MasterPageFile="~/MainLayout.Master" AutoEventWireup="true" CodeBehind="ListPages.aspx.cs" Inherits="FinalProject_n01364240.ListPages" %>
 <asp:Content ID="pages_list" ContentPlaceHolderID="body" runat="server">
     <h1>Pages</h1>
-    <div id="student_nav">
+    <div id="pages_nav">
         <asp:label for="page_search" runat="server">Search:</asp:label>
         <asp:TextBox ID="page_search" runat="server"></asp:TextBox>
         <asp:Button runat="server" CssClass="search_button" text="Search"/>
